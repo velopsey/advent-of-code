@@ -1,7 +1,7 @@
 # Clojure
 .cpcache/
 .nrepl-port
-.clj-kondo/.cache/
+.clj-kondo
 target/
 
 # Editors
