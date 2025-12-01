@@ -1,0 +1,14 @@
+{:paths ["src" "data" "script"]
+
+ :tasks
+ {setup    {:doc  "Setup new day: bb setup -y 2025 -d 1"
+            :task (exec 'tasks/setup)}
+
+  download {:doc  "Download input: bb download -y 2025 -d 1"
+            :task (exec 'tasks/download)}
+
+  template {:doc  "Create template: bb template -y 2025 -d 1"
+            :task (exec 'tasks/template)}
+
+  repl     {:doc  "Start nREPL server on port 1667"
+            :task (clojure "-M:nrepl")}}}

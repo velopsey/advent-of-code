@@ -1,0 +1,19 @@
+# Clojure
+.cpcache/
+.nrepl-port
+.clj-kondo/.cache/
+target/
+
+# Editors
+.idea/
+*.iml
+.vscode/
+.calva/
+.lsp/
+
+# Session 
+env.edn
+
+#Data 
+/data/**
+!data/README.md
