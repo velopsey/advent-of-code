@@ -40,7 +40,7 @@
   (let [{:keys [year day]} (parse-args opts)
         dir (str "src/y" year)
         filename (str dir "/d" day ".clj")
-        input-path (format "data/y%s/d%s.txt" year day)]
+        input-path (format "data/d%s.txt" day)]
     
     (when (fs/exists? filename)
       (println (format "⚠️  Template already exists: %s" filename))
