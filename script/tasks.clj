@@ -51,8 +51,6 @@
     (let [template-str (format "(ns y%s.d%s
   (:require [clojure.string :as str]))
 
-;; --- Input parsing ---
-
 (def input (slurp \"%s\"))
 
 (defn parse [s]
